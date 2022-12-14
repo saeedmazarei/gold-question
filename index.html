@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>soale talayi</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/images/help button-min.png" id="help">
+        <!-- <div class="help-popup">
+            <img src="./assets/images/help-popup-min.png">
+            <img src="./assets/images/close button-min.png" class="close">
+            <img src="./assets/images/screen/Soal Talayi Help.png">
+        </div> -->
+        <img src="./assets/images/title-min.png" id="title">
+    </header>
+    <div id="start-landing">
+        <img src="./assets/images/info-min.png" id="info">
+        <img src="./assets/images/strat button-min.png" id="start-button">
+    </div>
+    <div id="show-landing" class="deactive">
+        <div class="show-landing-container">
+            <div class="min-container">
+                <img src="./assets/images/1 off-min.png" class="min min-off">
+                <img src="./assets/images/1 on-min.png" class="min min-on deactive">
+                <img src="./assets/images/2 off-min.png" class="min min-off">
+                <img src="./assets/images/2 on-min.png" class="min min-on deactive">
+                <img src="./assets/images/3 off-min.png" class="min min-off">
+                <img src="./assets/images/3 on-min.png" class="min min-on deactive">
+                <img src="./assets/images/4 off-min.png" class="min min-off">
+                <img src="./assets/images/4 on-min.png" class="min min-on deactive">
+                <img src="./assets/images/5 off-min.png" class="min min-off">
+                <img src="./assets/images/5 on-min.png" class="min min-on deactive">
+            </div>
+            <div class="progress-bar">
+                <img src="./assets/images/rectangle 1-min.png" class="transparent-back">
+                <div class="text">
+                    <span>تعداد پاسخ درست به سوالات عکس دار(<span id="right-answer"></span>/25)</span>
+                </div>
+                <div class="progress-number">
+                    <span class="number">5</span>
+                    <span class="number">10</span>
+                    <span class="number">15</span>
+                    <span class="number">20</span>
+                    <span class="number">25</span>
+                </div>
+                <div class="step">
+                    <div class="score score1"></div>
+                    <div class="score score2"></div>
+                    <div class="score score3"></div>
+                    <div class="score score4"></div>
+                    <div class="score score5 check"></div>
+                    <div class="score score6"></div>
+                    <div class="score score7"></div>
+                    <div class="score score8"></div>
+                    <div class="score score9"></div>
+                    <div class="score score10 check"></div>
+                    <div class="score score11"></div>
+                    <div class="score score12"></div>
+                    <div class="score score13"></div>
+                    <div class="score score14"></div>
+                    <div class="score score15 check"></div>
+                    <div class="score score16"></div>
+                    <div class="score score17"></div>
+                    <div class="score score18"></div>
+                    <div class="score score19"></div>
+                    <div class="score score20 check"></div>
+                    <div class="score score21"></div>
+                    <div class="score score22"></div>
+                    <div class="score score23"></div>
+                    <div class="score score24"></div>
+                    <div class="score score25 check"></div>
+                </div>
+            </div>
+            <div class="result">
+                <img src="./assets/images/rectangle 3-min.png" class="transparent-back">
+                <div class="text wrong">
+                    <span>تعداد پاسخ اشتباه (<span id="wrong-answer"></span>/3)</span>
+                </div>
+                <div class="result-bar">
+                    <img src="./assets/images/right answer-min.png" class="right-answer">
+                    <img src="./assets/images/wrong answer-min.png" class="wrong-answer deactive">
+                    <img src="./assets/images/right answer-min.png" class="right-answer">
+                    <img src="./assets/images/wrong answer-min.png" class="wrong-answer deactive">
+                    <img src="./assets/images/right answer-min.png" class="right-answer">
+                    <img src="./assets/images/wrong answer-min.png" class="wrong-answer deactive">
+                </div>
+            </div>
+            <div class="retry deactive">
+                <img src="./assets/images/retry button-min.png">
+            </div>
+            <div class="gift">
+                <img src="./assets/images/rectangle 2-min.png" class="transparent-back">
+                <div class="gift-text text">
+                    <span>جوایز چالش سوال طلایی</span>
+                </div>
+                <!-- <div class="claiming-box">
+                    <img src="./assets/images/claim button-min.png" class="get-reward reward1">
+                    <img src="./assets/images/claim button-min.png" class="get-reward reward2">
+                    <img src="./assets/images/claim button-min.png" class="get-reward reward3 deactive">
+                    <img src="./assets/images/claim button-min.png" class="get-reward reward4">
+                </div>
+                <div class="claiming-cup">
+                    <img src="./assets/images/claim button-min.png" class="get-reward reward5">
+                </div> -->
+                <div class="reward-container">
+                    <div class="reward">
+                        <img src="./assets/images/cards/blue 1-min.png" class="blue">
+                        <img src="./assets/images/cards/gold 1-min.png" class="gold deactive">
+                        <img src="./assets/images/cards/green 1-min.png" class="green deactive">
+                    </div>
+                    <div class="reward">
+                        <img src="./assets/images/cards/blue 2-min.png" class="blue">
+                        <img src="./assets/images/cards/gold 2-min.png" class="gold deactive">
+                        <img src="./assets/images/cards/green 2-min.png" class="green deactive">
+                    </div>
+                    <div class="reward">
+                        <img src="./assets/images/cards/blue 3-min.png" class="blue">
+                        <img src="./assets/images/cards/gold 3-min.png" class="gold deactive">
+                        <img src="./assets/images/cards/green 3-min.png" class="green deactive">
+                    </div>
+                    <div class="reward">
+                        <img src="./assets/images/cards/blue 4-min.png" class="blue">
+                        <img src="./assets/images/cards/gold 4-min.png" class="gold deactive">
+                        <img src="./assets/images/cards/green 4-min.png" class="green deactive">
+                    </div>
+                </div>
+                <div class="cup">
+                    <img src="./assets/images/cards/blue 5-min.png" class="blue">
+                    <img src="./assets/images/cards/gold 5-min.png" class="gold deactive">
+                    <img src="./assets/images/cards/green 5-min.png" class="green deactive">
+                </div>
+            </div>
+        </div>
+        <div id="retry-container">
+            <div class="retry-box">
+                <img src="./assets/images/retry popup-min.png" class="popup">
+                <img src="./assets/images/close button-min.png" id="close">
+                <img src="./assets/images/free button-min.png" class="free">
+                <img src="./assets/images/200 coin button-min.png" class="coin">
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

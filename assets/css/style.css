@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: iranyekan;
+    src: url(../fonts/IRANSans_Medium.ttf);
+}
+
+@font-face {
+    font-family: iransansnum;
+    src: url(../fonts/IRANSansDNFaNum-Bold2.woff);
+}
+
+body {
+    font-family: iransansnum;
+    text-align: center;
+    width: 480px;
+    background-image: url(../images/pattern-min.png), linear-gradient(90deg, #0e4480, #2d95b9, #32c1d7, #33c7db, #32c1d7, #2d95b9, #0e4480);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* start landing page */
+
+#start-landing.deactive {
+    display: none;
+}
+
+#title {
+    width: 40%;
+    height:fit-content;
+    margin: 7% 5% 0% 0%;
+}
+
+#help {
+    width: 15%;
+    margin: 5% 0% 0% 5%;
+}
+
+#info {
+    width: 80%;
+    margin: auto;
+}
+
+#start-button {
+    width: 50%;
+    margin-top: 5%;
+}
+
+/* landing */
+
+#show-landing.deactive {
+    display: none;
+}
+
+.show-landing-container {
+    width: 90%;
+    margin: auto;
+}
+
+.min-container {
+    margin: auto;
+    margin-top: 5%;
+    width: 95%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.min.deactive{
+    display: none;
+}
+
+.text {
+    margin-top: -24%;
+    font-size: 20px;
+}
+
+.number {
+    font-family: iransansnum;
+    font-size: 0.75rem;
+}
+
+.progress-bar {
+    margin: auto;
+    width: 100%;
+    height: 4rem;
+    margin-top: 6%;
+    margin-bottom: 10%;
+}
+
+.transparent-back {
+    width: 100%;
+    margin: auto;
+}
+
+.progress-number {
+    margin-bottom: 0%;
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18.5%;
+}
+
+.step {
+    width: 95%;
+    height: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.score {
+    width: 3.7%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: linear-gradient(to top, #8DDBF9 0% ,#8DDBF9 50%, #CFF2FF 50%, #CFF2FF 90%, #8DDBF9 90%, #8DDBF9 100%);
+}
+
+.check {
+    background: linear-gradient(to top, #CCCCCC 0% ,#CCCCCC 50%, #EFEFEF 50%, #EFEFEF 90%, #CCCCCC 90%, #CCCCCC 100%);
+}
+
+.score.active {
+    background: linear-gradient(to top, #5DCE10 0% ,#5DCE10 50%, #7EE438 50%, #7EE438 90%, #5DCE10 90%, #5DCE10 100%);
+}
+
+.check.active {
+    background: linear-gradient(to top, #E5A941 0% ,#E5A941 50%, #FFED9F 50%, #FFED9F 90%, #E5A941 90%, #E5A941 100%);
+}
+
+.result {
+    height: 5rem;
+}
+
+.result img {
+    width: 60%;
+}
+
+.result-bar {
+    width: 45%;
+    display: flex;
+    margin-left: 28%;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.right-answer.deactive {
+    display: none;
+}
+
+.wrong-answer.deactive {
+    display: none;
+}
+
+.result-bar img {
+    max-width: 25%;
+}
+
+.wrong {
+    margin-top: -26%;
+}
+
+.retry {
+    margin-top: 5%;
+}
+
+.retry.deactive {
+    display: none;
+}
+
+.retry img {
+    width: 60%;
+    margin: auto;
+}
+
+.gift {
+    margin-top: 7%;
+    position: relative;
+}
+
+.gift-text {
+    margin-top: -60%;
+}
+
+/* .claiming-box {
+    width: 100%;
+    position: absolute;
+    margin-left: 3%;
+} */
+
+/* .reward1 {
+    right: 0%;
+}
+
+.reward2 {
+    right: 1%;
+}
+
+.reward3 {
+    right: 5%;
+}
+
+.reward4 {
+    right: 10%;
+}
+
+.reward5 {
+    right: 15%;
+} */
+
+/* .claiming-cup {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 27%;
+}
+
+.get-reward {
+    position: absolute;
+    width: 24%;
+}
+
+.get-reward.deactive {
+    display: none;
+} */
+
+.reward-container {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.reward {
+    width: 25%;
+    margin-top: 3%;
+}
+
+.reward img {
+    max-width: 100%;
+}
+
+.gold.deactive {
+    display: none;
+}
+
+.blue.deactive {
+    display: none;
+}
+
+.green.deactive {
+    display: none;
+}
+
+.cup {
+    width: 70%;
+    margin: auto;
+}
+
+.cup img {
+    max-width: 100%;
+}
+
+/* retry popup */
+
+#retry-container {
+    display: none;
+    position: fixed;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+}
+
+.popup {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    left:10%;
+}
+
+#close {
+    width: 10%;
+    position: relative;
+    margin-top: 24%;
+    left: 30%;
+}
+
+.free {
+    width: 60%;
+    z-index: 2;
+    position: absolute;
+    margin-top: 70%;
+    left: 20%;
+}
+
+.coin {
+    width: 60%;
+    position: absolute;
+    top: 47%;
+    left: 20%;
+}
+
