@@ -15,19 +15,30 @@ const wrongNumber = document.getElementById('wrong-answer');
 const retry = document.querySelector('.retry');
 const retryPopUp = document.getElementById('retry-container');
 const closeButton = document.getElementById('close');
-let rightAnswer = 15;
+let rightAnswer = 9;
 let wrongAnswer = 3;
 let claimed = [0, 0, 0, 0, 0];
-let question = 15;
+let question = rightAnswer + wrongAnswer;
 rightNumber.innerHTML = rightAnswer;
 wrongNumber.innerHTML = wrongAnswer;
+let registerStatus = 0;
 
+
+// register check
+function register() {
+    if(registerStatus == 1) {
+        showLand();
+    }
+}
+
+register();
 
 // when click on start button show landing
 startButton.addEventListener('click', showLand);
 
 // function that show landing
 function showLand() {
+    registerStatus = 1;
     startLanding.classList.add('deactive');
     showLanding.classList.remove('deactive');
 }
@@ -103,7 +114,10 @@ function gift() {
         if(claimed[i] == 0){
             blueGift[i].classList.add('deactive');
             goldGift[i].classList.remove('deactive');
-            // claming[i].classList.remove('deactive');
+            claming[i].classList.remove('deactive');
+            goldGift[i].addEventListener('click', () => {
+                greenFunction(i);
+            });
         }
         else claim(i);
     }
@@ -117,4 +131,11 @@ function claim(i) {
     greenGift[i].classList.remove('deactive');
     blueGift[i].classList.add('deactive');
     goldGift[i].classList.add('deactive');
+    claming[i].classList.add('deactive');
+}
+
+// claiming button function
+function greenFunction(i) {
+    claimed[i] = 1;
+    claim(i);
 }
