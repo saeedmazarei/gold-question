@@ -22,6 +22,7 @@ body {
     margin: auto;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -192,38 +193,15 @@ header {
     margin-top: -60%;
 }
 
-/* .claiming-box {
+.claiming-box {
     width: 100%;
     position: absolute;
-    margin-left: 3%;
-} */
-
-/* .reward1 {
-    right: 0%;
-}
-
-.reward2 {
-    right: 1%;
-}
-
-.reward3 {
-    right: 5%;
-}
-
-.reward4 {
-    right: 10%;
-}
-
-.reward5 {
-    right: 15%;
-} */
-
-/* .claiming-cup {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin-top: 27%;
+    animation-name: coinget;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .get-reward {
@@ -231,9 +209,47 @@ header {
     width: 24%;
 }
 
+@keyframes coinget {
+    0% {top: -5%;}
+    100% {top: 0%;}
+}
+
 .get-reward.deactive {
     display: none;
-} */
+}
+
+.reward1 {
+    left: 2%;
+}
+
+.reward2 {
+    left: 26%;
+}
+
+.reward3 {
+    left: 50%;
+}
+
+.reward4 {
+    left: 74%;
+}
+
+.get-reward img {
+    max-width: 100%;
+}
+.claiming-cup {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 27%;
+    animation-name: coinget;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 .reward-container {
     display: flex;
@@ -287,31 +303,77 @@ header {
 }
 
 .popup {
-    position: absolute;
-    width: 80%;
+    position: fixed;
+    width: 384px;
     top: 10%;
     left:10%;
 }
 
 #close {
-    width: 10%;
-    position: relative;
+    width: 48px;
+    position: fixed;
     margin-top: 24%;
-    left: 30%;
+    left: 76%;
 }
 
 .free {
-    width: 60%;
-    z-index: 2;
-    position: absolute;
+    width: 288px;
+    position: fixed;
     margin-top: 70%;
     left: 20%;
 }
 
 .coin {
-    width: 60%;
-    position: absolute;
+    width: 288px;
+    position: fixed;
     top: 47%;
     left: 20%;
 }
 
+@media only screen and (min-width: 481px) {
+    body {
+        /* width: 45%; */
+    }
+
+    #retry-container {
+        display: none;
+        position: fixed;
+        background-color: hsla(0, 0%, 0%, 0.9);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: auto;
+    }
+    
+    .popup {
+        position: fixed;
+        width: 25%;
+        top: 10%;
+        left: 37.5%;
+    }
+    
+    #close {
+        width: 3.5%;
+        position: fixed;
+        top: 11%;
+        margin-top: 0%;
+        left: 58%;
+    }
+    
+    .free {
+        width: 20%;
+        position: fixed;
+        top: 33%;
+        left: 40%;
+        margin-top: 0%;
+    }
+    
+    .coin {
+        width: 20%;
+        position: fixed;
+        top: 47%;
+        left: 40%;
+    }
+}
