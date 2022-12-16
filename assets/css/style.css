@@ -331,10 +331,6 @@ header {
 }
 
 @media only screen and (min-width: 481px) {
-    body {
-        /* width: 45%; */
-    }
-
     #retry-container {
         display: none;
         position: fixed;
@@ -365,7 +361,7 @@ header {
     .free {
         width: 20%;
         position: fixed;
-        top: 33%;
+        top: 42%;
         left: 40%;
         margin-top: 0%;
     }
@@ -373,7 +369,7 @@ header {
     .coin {
         width: 20%;
         position: fixed;
-        top: 47%;
+        top: 60%;
         left: 40%;
     }
 }
